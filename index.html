@@ -5,11 +5,23 @@
   		 <title>Events</title>
   	</head>
   	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-  	<script type="text/javascript" src="beeper.js"></script>
-
+  
 	<body>
 	<div class = container></div>
 		<h1>This is the Events Homework</h1>
 		<p>A car goes</p>
+
+	<script type ="text/javascript"></script>
+
+	<script>
+	var button = document.createElement('button');
+	button.innerText = 'click me';
+	document.body.appendChild(button);
+	button.addEventListener('click', function(){
+		$ ('p').append('beep');
+	var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+	$ ('p') .css('background-color', randomColor);
+	});
+	</script>
 </body>
 </html>
